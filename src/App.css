@@ -41,78 +41,44 @@
   order: -1;
 }
 
-/* .profile-card {
-  justify-content: flex-end;
+.profile-card--container {
+  overflow: hidden;
 }
 
-
-.row:nth-child(even) .profile-card {
-  justify-content: flex-start;
-} */
-
-.bio {
-  order: 1;
-  position: static;
-  width: 70%;
-  transform: translateX(0%);
-  -webkit-transform: translateX(0%);
+.profile-card {
+  left: calc(100% - 145px);
+  position: relative;
+  min-width: 525px;
+  transition: left 1s, right 1s ease;
 }
 
-.slide-in {
-  position: absolute;
-  overflow: hidden; /* to prevent scrollbar appearing */
-}
-
-.slide-in.from-left {
+.profile-card-hover {
   left: 0;
 }
 
-.slide-in.from-right {
+.row:nth-child(even) .profile-card {
+  right: calc(100% - 145px);
+  left: unset
+}
+
+.row:nth-child(even) .profile-card-hover {
   right: 0;
-}
-
-.slide-in-content {
-  padding: 5px 20px;
-  transition: transform 1s ease; /* our nice transition */
-}
-
-.slide-in.from-left .slide-in-content {
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-}
-
-.slide-in.from-right .slide-in-content {
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-}
-
-.slide-in.show .slide-in-content {
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
-}
-
-.w-33 {
-  width: 33% !important
 }
 
 .avatar {
   width: 157px !important;
   height: 157px !important;
   z-index: 1;
-  transition: transform 1s ease;
-  transform: translateX(366px);
 }
 
-.row:nth-child(even) .avatar { 
-  transform: translateX(0) !important;
+.bio {
+  order: 1;
+  position: static;
+  width: 70%;
 }
 
-.avatar-hover {
-  transform: translateX(0) !important;
-}
-
-.row:nth-child(even) .avatar-hover {
-  transform: translateX(366px) !important;
+.w-33 {
+  width: 33% !important
 }
 
 @keyframes App-logo-spin {
