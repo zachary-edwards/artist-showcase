@@ -12,7 +12,7 @@ export default function ProfileCard(props: any) {
     console.log(mtn)
     return (
         <div className="row mb-3" style={{backgroundImage: `url(${mtn})`, backgroundPosition: 'center'}}>
-            <div className={`col-md-6 col-md-offset-3 profile-card--container `}>
+            <div className={`col-md-6 col-md-offset-3 profile-card--container`}>
                 <div className={`d-flex flex-row rounded profile-card ${hovering && 'profile-card-hover'}`}>
                     <Avatar odd={props.odd} onHover={() => setHovering(!hovering)} />
 

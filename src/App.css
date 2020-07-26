@@ -28,6 +28,10 @@
   margin: auto;
 }
 
+.container {
+  max-width: 1090px;
+}
+
 .row:nth-child(odd) {
   justify-content: flex-end;
 
@@ -43,12 +47,12 @@
 
 .profile-card--container {
   overflow: hidden;
+  margin-bottom: 1.5rem;
 }
 
 .profile-card {
-  left: calc(100% - 145px);
+  left: calc(100% - 144px);
   position: relative;
-  min-width: 525px;
   transition: left 1s, right 1s ease;
 }
 
@@ -57,7 +61,7 @@
 }
 
 .row:nth-child(even) .profile-card {
-  right: calc(100% - 145px);
+  right: calc(100% - 144px);
   left: unset
 }
 
@@ -69,16 +73,22 @@
   width: 157px !important;
   height: 157px !important;
   z-index: 1;
+  border-radius: 1rem;
 }
 
 .bio {
   order: 1;
   position: static;
   width: 70%;
+  background-color: rgba(189, 195, 199, 0.5);
 }
 
 .w-33 {
   width: 33% !important
+}
+
+.mb-1rem {
+  margin-bottom:  1.5rem;
 }
 
 @keyframes App-logo-spin {
