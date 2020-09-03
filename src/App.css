@@ -32,6 +32,10 @@
   max-width: 1090px;
 }
 
+.row {
+  height: 185px
+}
+
 .row:nth-child(odd) {
   justify-content: flex-end;
 
@@ -48,12 +52,15 @@
 .profile-card--container {
   overflow: hidden;
   margin-bottom: 1.5rem;
+  padding: 0;
 }
 
 .profile-card {
   left: calc(100% - 144px);
   position: relative;
   transition: left 1s, right 1s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0;
 }
 
 .profile-card-hover {
@@ -61,7 +68,7 @@
 }
 
 .row:nth-child(even) .profile-card {
-  right: calc(100% - 144px);
+  right: calc(100% - 157px);
   left: unset
 }
 
@@ -80,7 +87,6 @@
   order: 1;
   position: static;
   width: 70%;
-  background-color: rgba(189, 195, 199, 0.5);
 }
 
 .w-33 {
