@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import ProfileCard from './components/ProfileCard';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './Home';
 
 function App() {
   return (
@@ -10,14 +10,7 @@ function App() {
         <header className="App-header">
           <Switch>
             <Route path='/' exact>
-              <section className="container mt-4 mb-4">
-                <div className="container">
-                  <ProfileCard odd/>
-                  <ProfileCard />
-                  <ProfileCard odd/>
-                  <ProfileCard />
-                </div>
-              </section>
+              <Home />
             </Route>
             <Route path='/artist'>
               <div>
