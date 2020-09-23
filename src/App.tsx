@@ -6,20 +6,16 @@ import Home from './Home';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <header className="App-header">
-          <Switch>
-            <Route path='/' exact>
-              <Home />
-            </Route>
-            <Route path='/artist'>
-              <div>
-                this is a test
+      <Switch>
+        <Route path='/' exact>
+          <Home />
+        </Route>
+        <Route path='/artist'>
+          <div>
+            this is a test
               </div>
-            </Route>
-          </Switch>
-        </header>
-      </div>
+        </Route>
+      </Switch>
     </BrowserRouter>
   )
 }

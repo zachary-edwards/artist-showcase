@@ -13,18 +13,35 @@
   color: #61dafb;
 }
 
-body {
+.container {
   display: grid;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
   color: white;
-  grid-template-columns: minmax(150px, 25%) 1fr;
+  grid-template-columns: minmax(150px, 150px) 1fr;
   padding: 0;
   margin: 0;
 }
 
 .sidebar {
-  height: 100vh;
 
   background-color: #282c34;
   font-size: 2rem;
   text-align: center;
+}
+
+.main {
+  display: grid;
+  color: black;
+  font-size: 1.5rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  flex-grow: 1;
+}
+
+.profile--card {
+  display: grid;
+  place-items: center;
+  background-color: pink;
 }
