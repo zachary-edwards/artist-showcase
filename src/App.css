@@ -50,7 +50,7 @@
   color: var(--clr-primary);
 }
 
-.nav-list li:nth-of-type(2) {
+.nav-list li:nth-of-type(4) {
   margin-top: auto;
 }
 
@@ -58,20 +58,38 @@
   background: #f9f9f9;
   color: black;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  display: flex;
+}
+
+.main .content { 
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   grid-template-columns: repeat(3, minmax(150px, 300px));
-  gap: 3rem 3rem;
+  gap: 3rem 1rem;
+}
+
+.profile--content {
+  width: 30%;
+  justify-content: center;
+  display: flex;
+  min-width: 300px;
 }
 
 .profile--card {
   flex: 0 2 300px;
   box-sizing: content-box;
   height: 300px;
-  width: 250px;
+  width: 300px;
   box-shadow: 0 0 3px #ccc;
   border-radius: 1em;
   place-items: center;
   background: white;
+}
+
+@media screen and (min-device-width: 1110px) {
+  .main {
+    padding-left: 1rem;
+  }
 }

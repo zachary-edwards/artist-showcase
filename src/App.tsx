@@ -13,7 +13,7 @@ function App() {
         <Route path='/artist'>
           <div>
             this is a test
-              </div>
+          </div>
         </Route>
       </Switch>
     </BrowserRouter>
