@@ -68,11 +68,12 @@
   flex-wrap: wrap;
   grid-template-columns: repeat(3, minmax(150px, 300px));
   gap: 3rem 1rem;
+  justify-content: space-evenly;
 }
 
 .profile--content {
   width: 30%;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   min-width: 300px;
 }
