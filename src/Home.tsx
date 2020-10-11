@@ -1,4 +1,5 @@
 import React from 'react'
+import ProfileCard from './components/ProfileCard'
 
 export default function Home(props: any) {
 
@@ -37,12 +38,7 @@ export default function Home(props: any) {
             </div>
             <div className="main" contentEditable>
                 <div className="content">
-                    <div className="profile--content">
-                        <div className='profile--card'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quis quam assumenda iusto iure placeat facilis modi, ea praesentium vero quas. Ipsum quas sapiente libero numquam dicta hic sit perferendis.</div>
-                    </div>
-                    <div className="profile--content">
-                        <div className='profile--card'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eum suscipit praesentium accusamus. Voluptatibus qui ipsa quam quas neque deserunt, nemo cumque culpa eum modi consequatur, minima officiis non iusto.</div>
-                    </div>
+                    <ProfileCard />
                     <div className="profile--content">
                         <div className='profile--card'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eum suscipit praesentium accusamus. Voluptatibus qui ipsa quam quas neque deserunt, nemo cumque culpa eum modi consequatur, minima officiis non iusto.</div>
                     </div>
