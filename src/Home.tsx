@@ -1,5 +1,9 @@
 import React from 'react'
 import ProfileCard from './components/ProfileCard'
+import kendrick from './assets/kendrick.jpg'
+import dababy from './assets/dababy.jpg'
+import megan from './assets/meganstallion.jpg'
+import travis from './assets/travis-scott.jpg'
 
 export default function Home(props: any) {
 
@@ -36,18 +40,12 @@ export default function Home(props: any) {
                     </div>
                 </div>
             </div>
-            <div className="main" contentEditable>
+            <div className="main">
                 <div className="content">
-                    <ProfileCard />
-                    <div className="profile--content">
-                        <div className='profile--card'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eum suscipit praesentium accusamus. Voluptatibus qui ipsa quam quas neque deserunt, nemo cumque culpa eum modi consequatur, minima officiis non iusto.</div>
-                    </div>
-                    <div className="profile--content">
-                        <div className='profile--card'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eum suscipit praesentium accusamus. Voluptatibus qui ipsa quam quas neque deserunt, nemo cumque culpa eum modi consequatur, minima officiis non iusto.</div>
-                    </div>
-                    <div className="profile--content">
-                        <div className='profile--card'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quasi voluptatem odio saepe sed ipsam repellendus perferendis praesentium doloribus, quaerat aliquam ratione odit incidunt eius nulla sunt at totam eveniet.</div>
-                    </div>
+                    <ProfileCard image={kendrick} name='Kendrick Lamar'/>
+                    <ProfileCard image={dababy} name='DaBaby'/>
+                    <ProfileCard image={megan} name='Megan Thee Stallion'/>
+                    <ProfileCard image={travis} name='Travis Scott'/>
                     {/* <div className="profile--content">
                         <div className='profile--card'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quis quam assumenda iusto iure placeat facilis modi, ea praesentium vero quas. Ipsum quas sapiente libero numquam dicta hic sit perferendis.</div>
                     </div> */}
