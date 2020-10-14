@@ -111,6 +111,7 @@
   flex-direction: column;
   align-content: center;
   color: white;
+  transition: opacity 0.5s;
 }
 
 .bio--name {
