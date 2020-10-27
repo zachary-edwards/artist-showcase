@@ -8,14 +8,17 @@ import classNames from 'classnames'
 
 export default function Home(props: any) {
     const [showSideNav, setShowSideNav] = useState(true)
-    console.log(classNames('sidenav', { 'open': showSideNav }), 'henlo')
+
     const handleOnClick = (event: any) => {
         event.preventDefault()
-        setShowSideNav(false)
+        setShowSideNav(!showSideNav)
     }
 
     return (
         <div className="container">
+            <div className="nav-open" onClick={handleOnClick}>
+                <i className="fas fa-ellipsis-h fa-lg"></i>
+            </div>
             <div className={classNames('sidebar', { 'open': showSideNav })}>
                 <div className="nav">
                     <div className="nav-list">

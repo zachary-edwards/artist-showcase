@@ -17,7 +17,7 @@
   display: grid;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   color: white;
   padding: 0;
   margin: 0;
@@ -40,8 +40,16 @@
 }
 
 .open {
-
   width: 103px;
+}
+
+.nav-open {
+  cursor: pointer;
+  position: fixed;
+  left: 40px;
+  top: 30px;
+  color: black;
+  font-size: 1.25rem;
 }
 
 .nav {
@@ -87,12 +95,12 @@
 .main .content { 
   margin: auto;
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
   gap: 3rem 1rem;
   justify-content: space-around;
   width: 100%;
   max-width: 1200px;
+  padding: 15px 0px;
 }
 
 .profile--content {
