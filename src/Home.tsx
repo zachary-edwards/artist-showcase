@@ -17,7 +17,7 @@ export default function Home(props: any) {
     return (
         <div className="container">
             <div className="nav-open" onClick={handleOnClick}>
-                <i className="fas fa-ellipsis-h fa-lg"></i>
+                <i className="fas fa-bars fa-lg"></i>
             </div>
             <div className={classNames('sidebar', { 'open': showSideNav })}>
                 <div className="nav">
@@ -56,6 +56,7 @@ export default function Home(props: any) {
                 </div>
             </div>
             <div className="main">
+                {/* title could be omnibus? */}
                 <div className="content">
                     <ProfileCard image={kendrick} name='Kendrick Lamar' />
                     <ProfileCard image={dababy} name='DaBaby' />

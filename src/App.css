@@ -94,6 +94,7 @@
   align-items: center;
   justify-content: left;
   display: flex;
+  padding-top: 30px;
 }
 
 .main .content { 
@@ -105,6 +106,7 @@
   width: 100%;
   max-width: 1200px;
   padding: 15px 50px;
+  border-top: 2px solid black;
 }
 
 .profile--content {
