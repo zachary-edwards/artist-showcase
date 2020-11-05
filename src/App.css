@@ -40,9 +40,19 @@
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 12px #ccc;
-
 }
 
+.header {
+  background-color: #f1f1f1;
+  height: 54px;
+  position: fixed;
+  top: 100px;
+}
+
+.title-holder {
+  max-width: 1200px;
+  border-bottom: 2px solid black;
+}
 .open {
   width: 103px;
 }
@@ -50,8 +60,8 @@
 .nav-open {
   cursor: pointer;
   position: fixed;
-  left: 40px;
-  top: 30px;
+  left: 74px;
+  top: 14px;
   color: black;
   font-size: 1.25rem;
 }
@@ -94,7 +104,6 @@
   align-items: center;
   justify-content: left;
   display: flex;
-  padding-top: 30px;
 }
 
 .main .content { 

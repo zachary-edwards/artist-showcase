@@ -7,7 +7,7 @@ import travis from './assets/travis-scott.jpg'
 import classNames from 'classnames'
 
 export default function Home(props: any) {
-    const [showSideNav, setShowSideNav] = useState(true)
+    const [showSideNav, setShowSideNav] = useState(false)
 
     const handleOnClick = (event: any) => {
         event.preventDefault()
@@ -16,15 +16,20 @@ export default function Home(props: any) {
 
     return (
         <div className="container">
-            <div className="nav-open" onClick={handleOnClick}>
-                <i className="fas fa-bars fa-lg"></i>
+            <div className="header">
+                <div className="nav-open" onClick={handleOnClick}>
+                    <i className="fas fa-bars fa-lg"></i>
+                </div>
+                <div className="title-holder">
+
+                </div>
             </div>
             <div className={classNames('sidebar', { 'open': showSideNav })}>
                 <div className="nav">
                     <div className="nav-list">
 
                         <div className="nav-close" onClick={handleOnClick}>
-                            <i className="fas fa-times"></i>
+                            <i className="fas fa-times" style={{fontSize: '25px'}}></i>
                         </div>
 
                         <li>
