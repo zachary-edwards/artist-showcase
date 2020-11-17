@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ProfileCard from './components/ProfileCard'
 import kendrick from './assets/kendrick.jpg'
 import dababy from './assets/dababy.jpg'
@@ -14,14 +14,29 @@ export default function Home(props: any) {
         setShowSideNav(!showSideNav)
     }
 
+    useEffect(() => {
+        window.onscroll = () => {
+            const header = document.getElementById('title-holder')
+            if (!header) return
+            if (document.documentElement.scrollTop > 90) {
+                const scrollFromTop = document.documentElement.scrollTop - 90 
+                scrollFromTop > 10 ? header.style.fontSize = '20px' : header.style.fontSize = `${30 - scrollFromTop}px`
+            } else {
+                header.style.fontSize = "30px";
+            }
+        }
+    }, [])
+
     return (
         <div className="container">
             <div className="header">
                 <div className="nav-open" onClick={handleOnClick}>
                     <i className="fas fa-bars fa-lg"></i>
                 </div>
-                <div className="title-holder">
-
+                <div className="title-holder" id='title-holder'>
+                    <span className="title" id="title">
+                        App Name
+                    </span>
                 </div>
             </div>
             <div className={classNames('sidebar', { 'open': showSideNav })}>
@@ -29,7 +44,7 @@ export default function Home(props: any) {
                     <div className="nav-list">
 
                         <div className="nav-close" onClick={handleOnClick}>
-                            <i className="fas fa-times" style={{fontSize: '25px'}}></i>
+                            <i className="fas fa-times" style={{ fontSize: '25px' }}></i>
                         </div>
 
                         <li>
@@ -63,6 +78,21 @@ export default function Home(props: any) {
             <div className="main">
                 {/* title could be omnibus? */}
                 <div className="content">
+                    <ProfileCard image={kendrick} name='Kendrick Lamar' />
+                    <ProfileCard image={dababy} name='DaBaby' />
+                    <ProfileCard image={megan} name='Megan Thee Stallion' />
+                    <ProfileCard image={travis} name='Travis Scott' />
+
+                    <ProfileCard image={kendrick} name='Kendrick Lamar' />
+                    <ProfileCard image={dababy} name='DaBaby' />
+                    <ProfileCard image={megan} name='Megan Thee Stallion' />
+                    <ProfileCard image={travis} name='Travis Scott' />
+
+                    <ProfileCard image={kendrick} name='Kendrick Lamar' />
+                    <ProfileCard image={dababy} name='DaBaby' />
+                    <ProfileCard image={megan} name='Megan Thee Stallion' />
+                    <ProfileCard image={travis} name='Travis Scott' />
+
                     <ProfileCard image={kendrick} name='Kendrick Lamar' />
                     <ProfileCard image={dababy} name='DaBaby' />
                     <ProfileCard image={megan} name='Megan Thee Stallion' />
