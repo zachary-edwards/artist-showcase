@@ -5,6 +5,7 @@ import dababy from './assets/dababy.jpg'
 import megan from './assets/meganstallion.jpg'
 import travis from './assets/travis-scott.jpg'
 import classNames from 'classnames'
+import Avatar from './components/Avatar'
 
 export default function Home(props: any) {
     const [showSideNav, setShowSideNav] = useState(false)
@@ -23,11 +24,11 @@ export default function Home(props: any) {
             if (!header) return
 
             const scrollFromTop = document.documentElement.scrollTop / 3
-            
-            if (80-scrollFromTop >= 20) {
+
+            if (80 - scrollFromTop >= 20) {
                 titleHolder.style.fontSize = `${80 - scrollFromTop}px`
                 header.style.height = `${200 - scrollFromTop * 2.43}px`
-            } else if (80-scrollFromTop < 0) {
+            } else if (80 - scrollFromTop < 0) {
                 titleHolder.style.fontSize = '20px';
                 header.style.height = '54.20px';
             }
@@ -83,8 +84,12 @@ export default function Home(props: any) {
                 </div>
             </div>
             <div className="main">
-                {/* title could be omnibus? */}
                 <div className="content">
+                <div className="featured--profile">
+
+                    <Avatar image={kendrick} />
+                </div>
+                <div className="profiles">
                     <ProfileCard image={kendrick} name='Kendrick Lamar' />
                     <ProfileCard image={dababy} name='DaBaby' />
                     <ProfileCard image={megan} name='Megan Thee Stallion' />
@@ -107,6 +112,7 @@ export default function Home(props: any) {
                     {/* <div className="profile--content">
                         <div className='profile--card'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quis quam assumenda iusto iure placeat facilis modi, ea praesentium vero quas. Ipsum quas sapiente libero numquam dicta hic sit perferendis.</div>
                     </div> */}
+                </div>
                 </div>
             </div>
         </div>

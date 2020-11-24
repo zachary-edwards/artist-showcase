@@ -66,7 +66,8 @@
 .title {
   display: inline-block;
   margin: auto;
-  padding-right: 65px
+  padding-right: 65px;
+  white-space: nowrap;
 }
 
 .open {
@@ -119,24 +120,35 @@
   color: black;
   align-items: center;
   justify-content: left;
-  display: flex;
   padding-top: 270px; 
 }
 
 .main .content { 
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
-  gap: 3rem 1rem;
-  justify-content: space-around;
   width: 100%;
   max-width: 1200px;
-  padding: 15px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
+
+.featured--profile {
+  width: 66%;
+  min-width: 300px;
+}
+
+.profiles {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0fr;
+  gap: 3.5rem 1rem;
+  padding: 15px 30px;
+}
+
+
 
 .profile--content {
   width: 30%;
-  justify-content: space-between;
   display: flex;
   min-width: 300px;
   justify-content: center;
