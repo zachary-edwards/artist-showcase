@@ -18,10 +18,12 @@ export default function Home(props: any) {
         window.onscroll = () => {
             const titleHolder = document.getElementById('title-holder')
             const header = document.getElementById('header')
+
             if (!titleHolder) return
             if (!header) return
+
             const scrollFromTop = document.documentElement.scrollTop / 3
-            console.log(80-scrollFromTop)
+            
             if (80-scrollFromTop >= 20) {
                 titleHolder.style.fontSize = `${80 - scrollFromTop}px`
                 header.style.height = `${200 - scrollFromTop * 2.43}px`
