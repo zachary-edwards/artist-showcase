@@ -16,24 +16,29 @@ export default function Home(props: any) {
 
     useEffect(() => {
         window.onscroll = () => {
-            const header = document.getElementById('title-holder')
+            const titleHolder = document.getElementById('title-holder')
+            const header = document.getElementById('header')
+            if (!titleHolder) return
             if (!header) return
-            if (document.documentElement.scrollTop > 90) {
-                const scrollFromTop = document.documentElement.scrollTop - 90 
-                scrollFromTop > 10 ? header.style.fontSize = '20px' : header.style.fontSize = `${30 - scrollFromTop}px`
-            } else {
-                header.style.fontSize = "30px";
+            const scrollFromTop = document.documentElement.scrollTop / 3
+            console.log(80-scrollFromTop)
+            if (80-scrollFromTop >= 20) {
+                titleHolder.style.fontSize = `${80 - scrollFromTop}px`
+                header.style.height = `${200 - scrollFromTop * 2.43}px`
+            } else if (80-scrollFromTop < 0) {
+                titleHolder.style.fontSize = '20px';
+                header.style.height = '54.20px';
             }
         }
     }, [])
 
     return (
         <div className="container">
-            <div className="header">
-                <div className="nav-open" onClick={handleOnClick}>
-                    <i className="fas fa-bars fa-lg"></i>
-                </div>
-                <div className="title-holder" id='title-holder'>
+            <div id='header' className="header">
+                <div id='title-holder' className="title-holder">
+                    <div className="nav-open" onClick={handleOnClick}>
+                        <i className="fas fa-bars fa-lg"></i>
+                    </div>
                     <span className="title" id="title">
                         App Name
                     </span>

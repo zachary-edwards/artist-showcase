@@ -43,30 +43,30 @@
 }
 
 .header {
-  height: 54px;
-  position: fixed;
+  height: 200px;
   width: 100%;
   z-index: 1;
-  overflow: hidden;
-  background: #f9f9f9
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  position: fixed;
 }
 
 .title-holder {
-  margin: auto;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   border-bottom: 2px solid black;
   height: 100%;
   color: black;
   justify-content: center;
-  font-size: 30px;
-  transition: 0.2s;
+  font-size: 80px;
   display: flex;
 }
 
 .title {
   display: inline-block;
-  vertical-align: middle;
+  margin: auto;
+  padding-right: 65px
 }
 
 .open {
@@ -75,11 +75,11 @@
 
 .nav-open {
   cursor: pointer;
-  position: fixed;
-  left: 74px;
-  top: 13px;
   color: black;
   font-size: 1.25rem;
+  top: calc(50% - 14px);
+  position: relative;
+  padding-left: 20px;
 }
 
 .nav {
@@ -120,7 +120,7 @@
   align-items: center;
   justify-content: left;
   display: flex;
-  padding-top: 54px; 
+  padding-top: 270px; 
 }
 
 .main .content { 
