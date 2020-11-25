@@ -133,19 +133,29 @@
 }
 
 .featured--profile {
-  width: 66%;
-  min-width: 300px;
+  flex-grow: 1;
 }
 
 .profiles {
-  flex-grow: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr 0fr;
-  gap: 3.5rem 1rem;
-  padding: 15px 30px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem 0rem;
+  flex-grow: 1;
+  padding: 50px 0px;
 }
 
 
+.profiles::after {
+  content: '';
+  flex: auto;
+  max-width: 64%;
+}
+
+.profile--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .profile--content {
   width: 30%;
