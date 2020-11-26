@@ -134,6 +134,37 @@
 
 .featured--profile {
   flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.featured--profile--container {
+  /* 1200 * 0.66 = 792px */
+  max-width: 792px;
+  min-width: 300px;
+  border-radius: 1em;
+  box-shadow: 0 0 3px #ccc;
+  display: flex;
+  flex: 0 1 792px;
+  flex-wrap: wrap;
+}
+
+.featured--profile-bio {
+  text-align: center;
+  flex: 0 1 492px;
+}
+
+.featured--profile-header {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 10px 0px;
+}
+
+.featured--profile-content {
+  display: flex;
+  padding: 0px 15px;
+  text-align: start;
 }
 
 .profiles {
@@ -165,7 +196,7 @@
 }
 
 .profile--card {
-  flex: 0 2 300px;
+  flex: 0 0 300px;
   box-sizing: content-box;
   height: 300px;
   width: 300px;
