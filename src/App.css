@@ -153,6 +153,18 @@
 .featured--profile-bio {
   text-align: center;
   flex: 0 1 492px;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+
+@media(max-width: 792px) {
+  .featured--profile--container {
+    flex-basis: 300px;
+  }
+  .featured--profile-bio {
+    max-height: none;
+  }
 }
 
 .featured--profile-header {
@@ -239,7 +251,7 @@
 .bio--content {
   display: flex;
   flex-basis: 50%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: auto;
 }
 

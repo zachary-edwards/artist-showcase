@@ -6,6 +6,7 @@ import megan from './assets/meganstallion.jpg'
 import travis from './assets/travis-scott.jpg'
 import classNames from 'classnames'
 import Avatar from './components/Avatar'
+import { Link } from 'react-router-dom'
 
 export default function Home(props: any) {
     const [showSideNav, setShowSideNav] = useState(false)
@@ -96,6 +97,19 @@ export default function Home(props: any) {
                                 </div>
                                 <div className="featured--profile-content">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi at modi repellendus dolorum culpa adipisci sed. Adipisci, possimus officiis, provident quasi nemo quaerat dolorem dolor nihil quidem et, accusamus perferendis.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quam voluptates architecto, ratione ipsa aspernatur voluptatum, consectetur voluptatem beatae dignissimos quisquam aliquam minus cum qui explicabo fuga! Hic, corrupti voluptatibus.
+                                    
+
+                                </div>
+                                <div className="bio--content">
+                                    <Link to='/artist' className="btn bio--btn" style={{color: 'black'}}>
+                                        <i className="far fa-user bio--icon"></i>
+                                                Profile
+                                        </Link>
+                                    <Link to='/artist' className="btn bio--btn" style={{color: 'black'}}>
+                                        <i className="fas fa-play bio--icon"></i>
+                                                Play
+                                        </Link>
                                 </div>
                             </div>
                         </div>
