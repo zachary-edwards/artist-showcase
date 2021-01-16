@@ -1,3 +1,4 @@
+import './Bio.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import classNames from 'classnames'

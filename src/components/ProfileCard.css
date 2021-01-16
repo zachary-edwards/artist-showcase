@@ -1,0 +1,24 @@
+.profile--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile--content {
+  display: flex;
+  flex: 0 0 300px;
+  justify-content: center;
+  border-radius: 1em;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  place-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+.profile--content:hover .bio {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
