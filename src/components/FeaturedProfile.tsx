@@ -21,12 +21,12 @@ export default function FeaturedProfile(props: any) {
                     <div className="bio--content">
                         <Link to='/artist' className="btn bio--btn" style={{color: 'black'}}>
                             <i className="far fa-user bio--icon"></i>
-                                    Profile
-                            </Link>
+                            Profile
+                        </Link>
                         <Link to='/artist' className="btn bio--btn" style={{color: 'black'}}>
                             <i className="fas fa-play bio--icon"></i>
-                                    Play
-                            </Link>
+                            Play
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -5,21 +5,21 @@ import classNames from 'classnames'
 
 export default function Bio(props: any) {
 
-    return (
-        <div className={classNames('bio')}>
-            <div className='bio--name'>
-                {props.name}
-            </div>
-            <div className="bio--content">
-                <Link to='/artist' className="btn bio--btn">
-                    <i className="far fa-user bio--icon"></i>
-                        Profile
-                </Link>
-                <Link to='/artist' className="btn bio--btn">
-                    <i className="fas fa-play bio--icon"></i>
-                        Play
-                </Link>
-            </div>
-        </div>
-    )
+  return (
+    <div className={classNames('bio')}>
+      <div className='bio--name'>
+        {props.name}
+      </div>
+      <div className="bio--content">
+        <Link to='/artist' className="btn bio--btn">
+          <i className="far fa-user bio--icon"></i>
+          Profile
+        </Link>
+        <Link to='/artist' className="btn bio--btn">
+          <i className="fas fa-play bio--icon"></i>
+          Play
+        </Link>
+      </div>
+    </div>
+  )
 }
