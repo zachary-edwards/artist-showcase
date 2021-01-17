@@ -21,28 +21,33 @@ function App() {
           show={showSideNav}
           onClick={handleOnClick}
         />
-        <Switch>
-          <Route path='/' exact>
-            <Home />
-          </Route>
-          <Route path='/artist'>
-            <div>
-              this is a test
+
+        <div className="main">
+          <div className="content">
+            <Switch>
+              <Route path='/' exact>
+                <Home />
+              </Route>
+              <Route path='/artist'>
+                <div>
+                  this is a test
+                </div>
+              </Route>
+              <Route path='/about'>
+                <div>
+                  TODO: About Page
+                </div>
+              </Route>
+              <Route path='/contact'>
+                <div>
+                  TODO: Contact us
+                </div>
+              </Route>
+            </Switch>
           </div>
-          </Route>
-          <Route path='/about'>
-            <div>
-              TODO: About Page
-          </div>
-          </Route>
-          <Route path='/contact'>
-            <div>
-              TODO: Contact us
-          </div>
-          </Route>
-        </Switch>
+        </div>
       </BrowserRouter>
-    </div>
+    </div >
   )
 }
 

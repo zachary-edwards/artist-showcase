@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/express/node_modules
+/express/dist
+/dist
 /.pnp
 .pnp.js
 
