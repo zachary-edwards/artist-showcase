@@ -1,3 +1,4 @@
+import './Home.css'
 import React, { Fragment } from 'react'
 import ProfileCard from './components/ProfileCard'
 import kendrick from './assets/kendrick.jpg'

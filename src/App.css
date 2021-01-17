@@ -39,17 +39,3 @@
   flex-flow: row wrap;
   justify-content: center;
 }
-
-.profiles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem 0rem;
-  flex-grow: 1;
-  padding: 50px 0px;
-}
-
-.profiles::after {
-  content: '';
-  flex: auto;
-  max-width: 64%;
-}
