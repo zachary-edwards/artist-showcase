@@ -11,10 +11,10 @@ imgbbRouter.get('/', async (req: Request, res: Response) => {
 })
 
 imgbbRouter.post('/uploadImage', async (req: Request, res: Response) => {
-  console.log('body', req.body.image)
-  await uploadImage(req.body.image).catch(err => {
+  const response = await uploadImage(req.body.image).catch(err => {
     console.error('upload image err', err)
   })
+  console.log(response)
   res.send('Okay from upload image')
 })
 
