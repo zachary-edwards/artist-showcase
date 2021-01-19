@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Header from './components/Nav/Header';
 import SideNav from './components/Nav/SideNav';
+import About from './components/About';
 
 function App() {
   const [showSideNav, setShowSideNav] = useState(false)
@@ -34,9 +35,7 @@ function App() {
                 </div>
               </Route>
               <Route path='/about'>
-                <div>
-                  TODO: About Page
-                </div>
+                <About />
               </Route>
               <Route path='/contact'>
                 <div>
