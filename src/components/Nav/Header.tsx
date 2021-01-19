@@ -33,8 +33,8 @@ export default function Header(props: IHeaderProps) {
           <i className="fas fa-bars fa-lg"></i>
         </div>
         <span className="title" id="title">
-          App Name
-                    </span>
+          App
+        </span>
       </div>
     </div>
   )
